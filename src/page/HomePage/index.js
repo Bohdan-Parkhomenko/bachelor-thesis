@@ -3,8 +3,6 @@ import './index.css';
 import HeroSection from "../../components/HeroSection/HeroSection";
 import FeatureCard from "../../components/FeatureCard/FeatureCard";
 import TestimonialCard from "../../components/TestimonialCard/TestimonialCard";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header/Header";
 import AboutBlock from "../../components/AboutBlock/AboutBlock";
 
 
@@ -26,19 +24,16 @@ export default function HomePage() {
                 <h2>Основні функції та послуги</h2>
                 <div className="features-grid">
                     <FeatureCard
-                        imageSrc="https://via.placeholder.com/300x150"
                         title="Підтримка дітей"
                         text="Надаємо всебічну підтримку та ресурси."
                         link="#"
                     />
                     <FeatureCard
-                        imageSrc="https://via.placeholder.com/300x150"
                         title="Освітні програми"
                         text="Організовуємо навчання та розвиток."
                         link="#"
                     />
                     <FeatureCard
-                        imageSrc="https://via.placeholder.com/300x150"
                         title="Психологічна допомога"
                         text="Допомагаємо дітям долати травми."
                         link="#"
@@ -51,7 +46,6 @@ export default function HomePage() {
                 text="Hope – Orphanage був заснований з метою забезпечення безпеки та підтримки дітей-сиріт. Ми віримо в силу спільноти та любові, які допомагають дітям зростати щасливими."
                 primaryAction="Дізнатися"
                 secondaryAction="Приєднатися"
-                imageSrc="https://via.placeholder.com/600x400"
             />
 
             <AboutBlock
@@ -59,7 +53,6 @@ export default function HomePage() {
                 text="Hope – Orphanage забезпечує тепле та безпечне середовище для дітей..."
                 primaryAction="Дізнатися"
                 secondaryAction="Зв'язатися"
-                imageSrc="https://via.placeholder.com/600x400"
             >
                 {/* ВСТАВКА: блок переваг */}
                 <div className="benefits">
