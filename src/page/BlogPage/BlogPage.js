@@ -2,6 +2,7 @@ import React from "react";
 import posts from "../../data/posts";
 import "./index.css";
 import PostCard from "./components/PostCard/PostCard";
+import {Link} from "react-router-dom";
 
 // Сортуємо пости за датою (від найновішого до найстарішого)
 const sortedPosts = [...posts].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
@@ -25,6 +26,13 @@ export default function BlogPage() {
                     <PostCard key={post.id} post={post} />
                 ))}
             </section>
+
+            <div className="view-all-wrapper">
+                <Link to="/all-posts" className="view-all-button">
+                    Переглянути всі новини
+                </Link>
+            </div>
+
 
             <section className="latest-posts">
                 <h2>Останні публікації блогу</h2>

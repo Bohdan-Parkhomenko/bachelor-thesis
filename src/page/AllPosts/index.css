@@ -1,0 +1,29 @@
+.all-posts-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.all-posts-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.all-posts-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.all-posts-header p {
+    font-size: 18px;
+    color: #444;
+}
+
+/* Використовуємо ту ж сітку що й у BlogPage */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}

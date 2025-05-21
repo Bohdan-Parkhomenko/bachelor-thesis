@@ -104,3 +104,25 @@
     gap: 32px;
     justify-items: center;
 }
+
+
+.view-all-wrapper {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.view-all-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.view-all-button:hover {
+    background-color: #333;
+}

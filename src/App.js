@@ -10,6 +10,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import PostPage from "./page/PostPage/PostPage";
 import BlogPage from "./page/BlogPage/BlogPage";
+import AllPost from "./page/AllPosts/AllPost";
 
 function App() {
     return (
@@ -22,8 +23,7 @@ function App() {
                 <Route path="/contacts" element={<ContactsPage/>}/>
                 <Route path="/blog" element={<BlogPage />} />
                 <Route path="/post/:id" element={<PostPage />} />
-
-
+                <Route path="/all-posts" element={<AllPost/>} />
 
             </Routes>
 

@@ -1,6 +1,10 @@
-import Image1 from "../components/Children-are-our-future.png";
-import Image2 from "../components/Children-are-our-future.png";
-import Image3 from "../components/Children-are-our-future.png";
+import Image1 from "../assets/Children-are-our-future.png";
+import Image2 from "../assets/dolia-vchytelia.webp";
+import Image3 from "../assets/uspikh-navchannia.webp";
+import Image4 from "../assets/psykholoh-emocii.webp";
+import Image5 from "../assets/volontery-syla.webp";
+import Image6 from "../assets/svyato-vesny.webp";
+import Image7 from "../assets/vidkryti-dveri.webp";
 
 const posts = [
     {
@@ -55,7 +59,7 @@ const posts = [
         readTime: "5 хвилин читання",
         author: "Андрій Литвин",
         publishedAt: "3 серпня 2023",
-        image: Image2,
+        image: Image4,
         content: `
             <h2>Велика місія допомоги</h2>
             <p>Волонтери щодня підтримують дітей — добром і турботою.</p>
@@ -70,7 +74,7 @@ const posts = [
         readTime: "6 хвилин читання",
         author: "Марина Сидоренко",
         publishedAt: "20 квітня 2023",
-        image: Image1,
+        image: Image5,
         content: `
             <h2>Важливість емоційної підтримки</h2>
             <p>Робота з емоціями допомагає дитині адаптуватися...</p>
@@ -85,7 +89,7 @@ const posts = [
         readTime: "3 хвилини читання",
         author: "Олена Мельник",
         publishedAt: "10 березня 2024",
-        image: Image3,
+        image: Image6,
         content: `
             <h2>Радість у кожному кроці</h2>
             <p>Наші вихованці підготували концерт та поробки для гостей.</p>
@@ -100,7 +104,7 @@ const posts = [
         readTime: "4 хвилини читання",
         author: "Тетяна Гаврилюк",
         publishedAt: "18 жовтня 2023",
-        image: Image1,
+        image: Image6,
         content: `
             <h2>Креативність наших дітей</h2>
             <p>Малюнки вразили журі оригінальністю й щирістю.</p>
@@ -115,7 +119,7 @@ const posts = [
         readTime: "5 хвилин читання",
         author: "Сергій Павленко",
         publishedAt: "12 грудня 2023",
-        image: Image2,
+        image: Image7,
         content: `
             <h2>Зустріч з добром</h2>
             <p>Ми відкрили двері всім охочим побачити життя притулку.</p>
