@@ -1,0 +1,202 @@
+.contacts-page {
+    font-family: 'Inter', sans-serif;
+    color: #111;
+    background-color: #fff;
+}
+
+/* === Contact Info Section === */
+.contact-section {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.contact-subtitle {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.contact-details {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    font-size: 14px;
+}
+
+.contact-item a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.contact-map iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 360px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+/* === Contact Form === */
+.contact-form {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin: 16px 0 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form .form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contact-form button:hover {
+    background: #222;
+}
+
+/* === Join Us Section === */
+.join-section {
+    padding: 60px 20px;
+}
+
+.join-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.join-title {
+    font-size: 32px;
+    font-weight: 700;
+    flex: 1;
+}
+
+.join-description {
+    flex: 1;
+    font-size: 16px;
+    color: #444;
+}
+
+.join-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.join-form input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+.join-form button {
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.join-form button:hover {
+    background: #222;
+}
+
+.join-note {
+    font-size: 12px;
+    color: #777;
+    margin-top: 8px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.form-checkbox label {
+    font-size: 14px;
+    cursor: pointer;
+}

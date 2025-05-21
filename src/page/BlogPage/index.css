@@ -1,0 +1,106 @@
+/* index.css або BlogPage.css */
+
+.blog-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.blog-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.blog-hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Категорії фільтра */
+.blog-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.blog-categories button {
+    border: 1px solid #ccc;
+    background: transparent;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.blog-categories button:hover,
+.blog-categories .active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Сітка постів */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+    .post-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Секція "Останні публікації" */
+.latest-posts {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+.latest-posts h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+
+.latest-posts {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.latest-posts h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.latest-posts p {
+    color: #555;
+    margin-bottom: 32px;
+}
+
+.latest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    justify-items: center;
+}

@@ -1,0 +1,95 @@
+.footer {
+    background: #fff;
+    font-family: 'Inter', sans-serif;
+    border-top: 1px solid #ccc;
+    padding: 40px 20px 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+
+.footer-left {
+    max-width: 400px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    margin: 12px 0;
+}
+
+.footer-left a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.social-icons {
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-policy-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-policy-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-policy-links a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+

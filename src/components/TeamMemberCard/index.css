@@ -1,0 +1,60 @@
+.team-card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    text-align: left;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.team-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: #111;
+}
+
+.team-position {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.team-description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.team-socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.team-socials .icon {
+    font-size: 16px;
+    text-decoration: none;
+    color: #111;
+    transition: color 0.2s;
+}
+
+.team-socials .icon:hover {
+    color: #0073b1;
+}
