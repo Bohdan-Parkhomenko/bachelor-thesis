@@ -1,7 +1,8 @@
 import React from 'react';
 import './index.css';
+import image from '../../assets/vidkryti-dveri.webp'
 
-export default function AboutBlock({ title, text, primaryAction, secondaryAction, imageSrc, children }) {
+export default function AboutBlock({title, text, primaryAction, secondaryAction, imageSrc = image, children}) {
     return (
         <section className="about-block">
             <div className="about-content">
@@ -19,7 +20,7 @@ export default function AboutBlock({ title, text, primaryAction, secondaryAction
 
             <div
                 className="about-image"
-                style={{ backgroundImage: `url(${imageSrc})` }}
+                style={{backgroundImage: `url(${imageSrc})`}}
                 role="img"
                 aria-label={title}
             ></div>

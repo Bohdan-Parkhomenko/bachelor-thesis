@@ -23,7 +23,6 @@ export default function AboutPage() {
                 text="Hope – Orphanage був заснований з метою забезпечення безпеки та підтримки дітей-сиріт. Наша місія полягає в створенні комфортного середовища, де кожна дитина може відчувати любов і турботу."
                 primaryAction="Дізнатися"
                 secondaryAction="Приєднатися"
-                imageSrc="https://via.placeholder.com/600x400"
             />
 
             {/* Секція статистики */}

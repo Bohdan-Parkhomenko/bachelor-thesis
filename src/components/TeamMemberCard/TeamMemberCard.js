@@ -6,7 +6,6 @@ export default function TeamMemberCard({ imageSrc, name, position, description, 
         <div className="team-card">
             <div
                 className="team-image"
-                style={{ backgroundImage: `url(${imageSrc || 'https://via.placeholder.com/100'})` }}
                 role="img"
                 aria-label={name}
             ></div>
