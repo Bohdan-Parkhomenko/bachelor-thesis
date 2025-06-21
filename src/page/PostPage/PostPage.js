@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./index.css";
-import posts from "../../data/posts";
-
-
-// 1. Тимчасовий масив постів (можеш винести в окремий файл)
+import { fetchNewsById } from "../../data/newsApi";
 
 export default function PostPage() {
     const { id } = useParams();
+    const [post, setPost] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-    // 2. Знаходимо пост за ID
-    const post = posts.find((p) => p.id === id);
+    useEffect(() => {
+        fetchNewsById(id)
+            .then(data => {
+                setPost(data);
+                setLoading(false);
+            })
+            .catch(() => {
+                setPost(null);
+                setLoading(false);
+            });
+    }, [id]);
 
-    // 3. Якщо не знайдено — показати повідомлення
-    if (!post) {
+    if (loading) {
+        return <div className="post-page"><h2>Завантаження...</h2></div>;
+    }
+
+    if (!post || !post._id) {
         return <div className="post-page"><h2>Статтю не знайдено</h2></div>;
     }
 

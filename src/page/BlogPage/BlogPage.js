@@ -1,19 +1,25 @@
-import React from "react";
-import posts from "../../data/posts";
+import React, { useEffect, useState } from "react";
+import { fetchNews } from "../../data/newsApi";
 import "./index.css";
 import PostCard from "./components/PostCard/PostCard";
-import {Link} from "react-router-dom";
-
-// Сортуємо пости за датою (від найновішого до найстарішого)
-const sortedPosts = [...posts].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
-
-// Перші 6 для загальної сітки
-const mainPosts = sortedPosts.slice(0, 6);
-
-// Останні 3 для окремої секції
-const latestPosts = sortedPosts.slice(0, 3);
+import { Link } from "react-router-dom";
 
 export default function BlogPage() {
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        fetchNews().then(data => setPosts(data));
+    }, []);
+
+    // Сортуємо новини від найновіших до найстаріших
+    const sortedPosts = [...posts].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+    // Перші 6 для загальної сітки
+    const mainPosts = sortedPosts.slice(0, 6);
+
+    // Останні 3 для окремої секції
+    const latestPosts = sortedPosts.slice(0, 3);
+
     return (
         <div className="blog-page">
             <section className="blog-hero">
@@ -23,7 +29,7 @@ export default function BlogPage() {
 
             <section className="post-grid">
                 {mainPosts.map((post) => (
-                    <PostCard key={post.id} post={post} />
+                    <PostCard key={post._id} post={post} />
                 ))}
             </section>
 
@@ -33,13 +39,12 @@ export default function BlogPage() {
                 </Link>
             </div>
 
-
             <section className="latest-posts">
                 <h2>Останні публікації блогу</h2>
                 <p>Досліджуйте наші останні статті та новини</p>
                 <div className="latest-grid">
                     {latestPosts.map((post) => (
-                        <PostCard key={post.id} post={post} />
+                        <PostCard key={post._id} post={post} />
                     ))}
                 </div>
             </section>

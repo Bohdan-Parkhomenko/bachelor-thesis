@@ -1,11 +1,21 @@
-import React from "react";
-import posts from "../../data/posts";
+import React, { useEffect, useState } from "react";
+import { fetchNews } from "../../data/newsApi";
 import "./index.css";
 import PostCard from "../BlogPage/components/PostCard/PostCard";
 
-
-
 export default function AllPost() {
+    const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        fetchNews()
+            .then(data => {
+                setPosts(data);
+                setLoading(false);
+            })
+            .catch(() => setLoading(false));
+    }, []);
+
     return (
         <div className="blog-page">
             <section className="blog-hero">
@@ -13,12 +23,15 @@ export default function AllPost() {
                 <p>Досліджуйте наші історії та новини про дітей.</p>
             </section>
 
-            <section className="post-grid">
-                {posts.map((post) => (
-                    <PostCard key={post.id} post={post} />
-                ))}
-            </section>
-
+            {loading ? (
+                <p style={{ textAlign: "center" }}>Завантаження новин...</p>
+            ) : (
+                <section className="post-grid">
+                    {posts.map((post) => (
+                        <PostCard key={post._id} post={post} />
+                    ))}
+                </section>
+            )}
         </div>
     );
 }
